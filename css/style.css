@@ -1,0 +1,147 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  padding: 38px 0;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Nav */
+
+.nav__list {
+  display: flex;
+}
+
+.nav__link {
+  margin-left: 50px;
+  padding: 5px;
+  color: #fff;
+  background: none;
+  
+  transition: background-color .2s linear, color .2s linear;
+}
+
+.nav__link:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* Intro */
+.intro__inner {
+  display: block;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 295px;
+
+  background: url('../img/intro-bg.png');
+  background-position:  right top 150px;
+  background-repeat: no-repeat;
+}
+
+.intro__suptitle,
+.intro__subtitle {
+  font-size: 50px;
+  font-weight: 300;
+  color: #000;
+}
+
+.intro__suptitle span {
+  background-color: #000;
+  color: #fff;
+}
+
+.intro__title {
+  font-size: 64px;
+  font-weight: 700;
+  color: #000;
+}
+
+.intro__subtitle span {
+  background-color: #FFFF00;
+}
+
+.intro__buttons {
+  margin-top: 50px;
+  padding-bottom: 120px;
+  display: flex;
+  align-items: center;  
+}
+
+/* Btn */
+.btn {
+  width: 160px;
+  text-align: center;
+  padding: 18px 0;
+  border: 3px solid #000;
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  margin-right: 40px;
+
+  transition: background-color .15s linear, color .15s linear;
+}
+
+.btn:hover{
+  background: #000;
+  color: #fff;
+}
+
+/* Social */
+
+.social {
+  display: flex;
+}
+
+.social__icon {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  border: 3px solid #000;
+
+  margin-right: 30px;
+  transition: background-color .15s linear, fill .15s linear;
+}
+
+.social__icon:hover {
+  fill: #fff;
+  background-color: #000;
+}
